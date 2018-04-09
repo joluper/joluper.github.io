@@ -96,5 +96,4 @@ Los pasos han sido los siguientes:
 ### Creación de un nuevo site con Jekyll
 
 Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll, para ello ejecutaremos el siguiente comando:
-
 	
