@@ -62,3 +62,39 @@ Tanto los posts como las páginas deben empezar con una cabecera del siguiente e
 	---
 
 Cualquier modificación de estilo debe ser realizada en los ficheros '.css' hubicados en el directorio /css/.
+	
+	...
+	├── css 					- directorio en el que se almacenan los ficheros '.css' utilizados.
+	│   ├── bootstrap.css		- fichero de estilos básico.
+	│   ├── bootstrap.min.css	- fichero de estilos básico reducido.
+	│   ├── grayscale.css		- fichero de estilos para los colores del tema.
+	│   └── timeline.css		- fichero de estilos para el timeline.
+	...
+	
+## Proceso de creado del portfolio.
+
+Para crear el portfolio se han llevado a cabo los siguientes pasos:
+
+### Instalación de Jekyll
+
+Para instalar jekyll se ha utilizado la documentación oficial de este, concretamente se ha seguido el siguiente enlace.
+
+https://jekyllrb.com/docs/installation/
+
+Los pasos han sido los siguientes:
+
+*(!)* Es necesario tener instalado el compilador gcc para instalar jekyll.
+
+*Instalación de ruby*
+
+	dnf -y install rubygems
+	
+*Instalación de Jekyll*
+
+	gem install jekyll
+	
+### Creación de un nuevo site con Jekyll
+
+Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll, para ello ejecutaremos el siguiente comando:
+
+	
