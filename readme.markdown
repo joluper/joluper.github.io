@@ -13,13 +13,13 @@ El portfolio hereda la estructura de la plantilla con ciertas modificaciones. Es
 	├── career.html				- documento utilizado para el timeline (simplemente se declara el timeline).
 	├── _config.yml				- fichero de configuración de jekyll.
 	├── contact.html			- documento que almacena los datos de contacto.
-	├── css 					- directorio en el que se almacenan los ficheros '.css' utilizados.
-	│   ├── bootstrap.css		- fichero de estilos básico.
-	│   ├── bootstrap.min.css	- fichero de estilos básico reducido.
-	│   ├── grayscale.css		- fichero de estilos para los colores del tema.
-	│   └── timeline.css		- fichero de estilos para el timeline.
+	├── css 				- directorio en el que se almacenan los ficheros '.css' utilizados.
+	│   ├── bootstrap.css			- fichero de estilos básico.
+	│   ├── bootstrap.min.css		- fichero de estilos básico reducido.
+	│   ├── grayscale.css			- fichero de estilos para los colores del tema.
+	│   └── timeline.css			- fichero de estilos para el timeline.
 	├── font-awesome			- directorio donde se almacena la fuente utilizada principalmente.
-	│   ├── css					- ficheros de estilos para font-awesome.
+	│   ├── css				- ficheros de estilos para font-awesome.
 	│   │   └── [...]			
 	│   ├── fonts				- ficheros de fuentes para font-awesome.
 	│   │   └── [...]
@@ -27,9 +27,9 @@ El portfolio hereda la estructura de la plantilla con ciertas modificaciones. Es
 	│   │   └── [...]
 	│   └── scss				- ficheros de estilo scsss para font-awesome.
 	│       └── [...]
-	├── fonts					- directorio donde se almacena otras fuentes utilizadas.
+	├── fonts				- directorio donde se almacena otras fuentes utilizadas.
 	│   └── [...]
-	├── img						- directorio donde se almacenan las imágenes utilizadas.
+	├── img					- directorio donde se almacenan las imágenes utilizadas.
 	│   ├── [...]
 	│   └── timeline			- directorio donde se almacenan las imágenes utilizadas en el timeline.
 	│       └── [...]
@@ -38,16 +38,16 @@ El portfolio hereda la estructura de la plantilla con ciertas modificaciones. Es
 	│   ├── header.html			- fichero que contiene la cabecera de página utilizada.
 	│   ├── head.html			- fichero que contiene el principio de fichero de las páginas.
 	│   ├── js.html				- fichero que contiene código html referente a javascript utilizado.
-	│   └── navigation.html		- fichero que contiene la barra de navegación de la web.
+	│   └── navigation.html			- fichero que contiene la barra de navegación de la web.
 	├── index.html				- fichero html principal que carga el resto de ficheros.
-	├── js						- directorio donde se almacenan los ficheros javascript utilizados.
+	├── js					- directorio donde se almacenan los ficheros javascript utilizados.
 	│   └── [...]
 	├── _layouts				- directorio donde se almacenan las plantillas de estructuración de una página.
-	│   └── default.html		- plantilla principal de estructuración de una página.
-	├── less					- directorio de almacenamiento de ficheros less necesarios.
+	│   └── default.html			- plantilla principal de estructuración de una página.
+	├── less				- directorio de almacenamiento de ficheros less necesarios.
 	│   └── [...]
-	├── LICENSE					- documento de licencia.
-	├── _posts					- directorio de posts interpretados como entradas del timeline.
+	├── LICENSE				- documento de licencia.
+	├── _posts				- directorio de posts interpretados como entradas del timeline.
 	│   └── [...]
 	└── readme.markdown			- fichero que estás leyendo ahora mismo.
 
