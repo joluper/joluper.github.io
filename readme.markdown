@@ -1,71 +1,99 @@
-# Timeline Jekyll Theme
+# Jose Luis Pérez Portfolio
 
-Timeline is multipurpose, single page Jekyll theme that includes a timeline section. 
+Este portfolio está basado en la plantilla "Timeline" para Jekyll, puedes encontrar más información para esta plantilla en la página: 
 
-**Example sites**:
+https://github.com/kirbyt/timeline-jekyll-theme 
 
-- [Demo site](http://kirbyt.github.io/timeline-jekyll-theme)
-- [kirbyturner.com](http://www.kirbyturner.com)
+## Estructura de directorios
 
-This theme is a mashup of two other themes:
+El portfolio hereda la estructura de la plantilla con ciertas modificaciones. Este resultado se ordena en una serie de directorios y ficheros los cuales cumplen la siguiente estructura:
 
-- [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale)
-- [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme)
+	joluper.github.io/
+	├── about.html				- ocumento que almacena una breve descripción personal.
+	├── career.html				- documento utilizado para el timeline (simplemente se declara el timeline).
+	├── _config.yml				- fichero de configuración de jekyll.
+	├── contact.html			- documento que almacena los datos de contacto.
+	├── css 				- directorio en el que se almacenan los ficheros '.css' utilizados.
+	│   ├── bootstrap.css			- fichero de estilos básico.
+	│   ├── bootstrap.min.css		- fichero de estilos básico reducido.
+	│   ├── grayscale.css			- fichero de estilos para los colores del tema.
+	│   └── timeline.css			- fichero de estilos para el timeline.
+	├── font-awesome			- directorio donde se almacena la fuente utilizada principalmente.
+	│   ├── css				- ficheros de estilos para font-awesome.
+	│   │   └── [...]			
+	│   ├── fonts				- ficheros de fuentes para font-awesome.
+	│   │   └── [...]
+	│   ├── less				- ficheros less para font-awesome.
+	│   │   └── [...]
+	│   └── scss				- ficheros de estilo scsss para font-awesome.
+	│       └── [...]
+	├── fonts				- directorio donde se almacena otras fuentes utilizadas.
+	│   └── [...]
+	├── img					- directorio donde se almacenan las imágenes utilizadas.
+	│   ├── [...]
+	│   └── timeline			- directorio donde se almacenan las imágenes utilizadas en el timeline.
+	│       └── [...]
+	├── _includes				- directorio donde se almacenan los ficheros '.html' principales.
+	│   ├── footer.html			- fichero que contiene el pie de página utilizado en la web.
+	│   ├── header.html			- fichero que contiene la cabecera de página utilizada.
+	│   ├── head.html			- fichero que contiene el principio de fichero de las páginas.
+	│   ├── js.html				- fichero que contiene código html referente a javascript utilizado.
+	│   └── navigation.html			- fichero que contiene la barra de navegación de la web.
+	├── index.html				- fichero html principal que carga el resto de ficheros.
+	├── js					- directorio donde se almacenan los ficheros javascript utilizados.
+	│   └── [...]
+	├── _layouts				- directorio donde se almacenan las plantillas de estructuración de una página.
+	│   └── default.html			- plantilla principal de estructuración de una página.
+	├── less				- directorio de almacenamiento de ficheros less necesarios.
+	│   └── [...]
+	├── LICENSE				- documento de licencia.
+	├── _posts				- directorio de posts interpretados como entradas del timeline.
+	│   └── [...]
+	└── readme.markdown			- fichero que estás leyendo ahora mismo.
 
-Big thanks to the creators of Grayscale and Agency. This theme would not be possible without their hard work.
+En este caso, los posts son interpretados como entradas en el timeline y los ficheros ".html" como páginas de la web.
 
-## How to Use
+Tanto los posts como las páginas deben empezar con una cabecera del siguiente estilo, de este modo pueden ser identificadas y tratadas por jekyll.
 
-Timeline works in a similar fashion as a Jekyll blog site with two differences:
+	---
+	layout: null
+	section-type: default
+	title: nombre
+	---
 
-1. Pages are displayed as sections within the single HTML web page.
-2. Posts are displayed as timeline entries.
+Cualquier modificación de estilo debe ser realizada en los ficheros '.css' hubicados en el directorio /css/.
+	
+	...
+	├── css 					- directorio en el que se almacenan los ficheros '.css' utilizados.
+	│   ├── bootstrap.css		- fichero de estilos básico.
+	│   ├── bootstrap.min.css	- fichero de estilos básico reducido.
+	│   ├── grayscale.css		- fichero de estilos para los colores del tema.
+	│   └── timeline.css		- fichero de estilos para el timeline.
+	...
+	
+## Proceso de creado del portfolio.
 
-### Creating a Section
+Para crear el portfolio se han llevado a cabo los siguientes pasos:
 
-To add a section, create a new *.html* file such as *about.html*. This will add the section to the navigation menu and display the section as part of the single page HTML. The file should include the following YAML front matter:
+### Instalación de Jekyll
 
-- **layout** It's value should always be `null`.
-- **title** This is the text displayed in the navigation menu.
-- **section-type** This identifies the section type, or layout for the section. The possible values are:
-    + `default`
-    + `contact`
-    + `timeline`
+Para instalar jekyll se ha utilizado la documentación oficial de este, concretamente se ha seguido el siguiente enlace.
 
-Use the **section-type** `default` when you want to display the content in a regular section.
+https://jekyllrb.com/docs/installation/
 
-Use the **section-type** `contact` to display a contact section. A contact section can optionally contain an email address and a list of social networks that are display below the content. See *contact.html* for an example of setting the email address and social networks.
+Los pasos han sido los siguientes:
 
-Use the **section-type** `timeline` to display a timeline of entries. 
+*(!)* Es necesario tener instalado el compilador gcc para instalar jekyll.
 
-## More About Timelines
+*Instalación de ruby*
 
-A timeline is a list of post sorted by date. To create a new timeline entry, add a new post to the *_posts* directory. The post should have the following YAML front matter properties:
+	dnf -y install rubygems
+	
+*Instalación de Jekyll*
 
-- **layout** It's value should always be `null`.
-- **title** This is the header text for the career entry.
-- **subtitle** (Optional) This is the sub-header text for the career entry.
-- **image** (Optional) This is a reference to the thumbnail image displayed with the career entry. If blank or not present, then `site.career-img` defined in the *_config.yml* is used.
+	gem install jekyll
+	
+### Creación de un nuevo site con Jekyll
 
-Example timeline post front matter:
-
-```
----
-layout: null
-title: 2014
-subtitle:
-image: "img/timeline/2014.png"
----
-```
-
-# License
-
-Code released under the [Apache 2.0][license] license.
-
-**Portions copyrighted by**
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC.  
-Copyright 2014 Rick Kim (y7kim).  
-Copyright 2015 Kirby Turner
-
-[license]: https://github.com/kirbyt/timeline-jekyll-theme/blob/master/LICENSE
+Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll, para ello ejecutaremos el siguiente comando:
+	
