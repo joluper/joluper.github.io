@@ -123,8 +123,8 @@
 
     .timeline>li .timeline-panel {
         float: left;
-        width: 41%;
-        padding: 0 20px 20px 30px;
+        width: 70%;
+        padding: 3px 20px 20px 30px;
         text-align: right;
     }
 
