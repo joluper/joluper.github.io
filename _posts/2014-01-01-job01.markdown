@@ -1,7 +1,8 @@
 ---
 layout: null
-title: June 2014 - Present
-subtitle:
+title: October 2017 - Currently
+subtitle: Technician in computer support to client
 image: "img/timeline/4.jpg"
 ---
-An sea adhuc graece gloriatur. Ferri liberavisse eu mea, has ei nibh atomorum. Ex putant nominavi indoctum mei. Qualisque dignissim his eu, ei his dictas nusquam.
+
+I believe that this position has been one of my first experiences in a larger business infrastructure, the fact of working with a wide range of technologies both private and free has made me learn to adapt to the multiple environments of each client and solve any problem that appears in the shortest time possible.

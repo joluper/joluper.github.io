@@ -1,7 +1,8 @@
 ---
 layout: null
-title: July 2011 - May 2012
-subtitle:
+title: January 2015- July 2015
+subtitle: Internship as Technician in Electronic Repairs
 image: "img/timeline/1.jpg"
 ---
-Vix ne omnesque interpretaris, per ut menandri tincidunt conclusionemque. Sit te simul clita, et vis dicant probatus honestatis
+
+A demanding job that required a high level of resolution to any inconvenience and unforeseen that arose during the repair of both towers or laptops (Windows or Mac) and tablets, mobile phones or video game consoles.

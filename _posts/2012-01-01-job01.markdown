@@ -1,7 +1,9 @@
 ---
 layout: null
-title: May 2012 - January 2013
-subtitle:
+title: June 2015 - March 2016
+subtitle: Computer troubleshooting service at home
 image: "img/timeline/2.jpg"
 ---
-Ex mei electram eloquentiam. An torquatos intellegebat pro, solum liber saepe et eos. Postea essent meliore ne mei, brute referrentur et eum, cum ei oblique tincidunt definitiones.
+
+A work completely close to friends and acquaintances, totally based on customer satisfaction.
+
