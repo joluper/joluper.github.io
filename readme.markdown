@@ -51,26 +51,6 @@ El portfolio hereda la estructura de la plantilla con ciertas modificaciones. Es
 	│   └── [...]
 	└── readme.markdown			- fichero que estás leyendo ahora mismo.
 
-En este caso, los posts son interpretados como entradas en el timeline y los ficheros ".html" como páginas de la web.
-
-Tanto los posts como las páginas deben empezar con una cabecera del siguiente estilo, de este modo pueden ser identificadas y tratadas por jekyll.
-
-	---
-	layout: null
-	section-type: default
-	title: nombre
-	---
-
-Cualquier modificación de estilo debe ser realizada en los ficheros '.css' hubicados en el directorio /css/.
-	
-	...
-	├── css 					- directorio en el que se almacenan los ficheros '.css' utilizados.
-	│   ├── bootstrap.css		- fichero de estilos básico.
-	│   ├── bootstrap.min.css	- fichero de estilos básico reducido.
-	│   ├── grayscale.css		- fichero de estilos para los colores del tema.
-	│   └── timeline.css		- fichero de estilos para el timeline.
-	...
-	
 ## Proceso de creado del portfolio.
 
 Para crear el portfolio se han llevado a cabo los siguientes pasos:
@@ -96,4 +76,80 @@ Los pasos han sido los siguientes:
 ### Creación de un nuevo site con Jekyll
 
 Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll, para ello ejecutaremos el siguiente comando:
+
+	jekyll new newsite
+	
+### Aportación de información
+
+En este caso, los posts son interpretados como entradas en el timeline y los ficheros ".html" como páginas de la web.
+
+Toda nuestra información laboral será hubicada en ficheros ".md" en el directorio /posts/.
+
+	...
+	├── _posts				- directorio de posts interpretados como entradas del timeline.
+	│   └── [...]
+	...
+	
+	
+Para la información de las páginas del portfolio, solo tendríamos que editar los ficheros ".html" existentes en la raíz del portfolio, estos son los siguientes:
+
+	...
+	├── about.html				- ocumento que almacena una breve descripción personal.
+	├── career.html				- documento utilizado para el timeline (simplemente se declara el timeline).
+	├── contact.html			- documento que almacena los datos de contacto.
+	...
+	
+Tanto los posts como las páginas deben empezar con una cabecera del siguiente estilo, de este modo pueden ser identificadas y tratadas por jekyll.
+
+	---
+	layout: null
+	section-type: default
+	title: nombre
+	---
+	
+	
+### Personalización de la plantilla
+
+Cualquier modificación de estilo debe ser realizada en los ficheros '.css' hubicados en el directorio /css/.
+	
+	...
+	├── css 					- directorio en el que se almacenan los ficheros '.css' utilizados.
+	│   ├── bootstrap.css		- fichero de estilos básico.
+	│   ├── bootstrap.min.css	- fichero de estilos básico reducido.
+	│   ├── grayscale.css		- fichero de estilos para los colores del tema.
+	│   └── timeline.css		- fichero de estilos para el timeline.
+	...
+	
+Las modificaciones de estilo que se han hecho para el portfolio se lcoalizan básicamente en el fichero "timeline.css" y estas han sido las siguientes:
+
+#### Padding de los textos del timeline
+
+Ajustando los valores del atributo padding podemos ajustar los textos a nuestro gusto.
+
+    .timeline>li .timeline-panel {
+        padding: 0 250px 20px 1px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 10px 10px 250px;
+    }
+
+#### Imágenes mostradas
+
+Podemos utilizar nuestras propias imágenes substituyendo las existentes en el directorio /img/.
+
+	...
+	├── img					- directorio donde se almacenan las imágenes utilizadas.
+	│   ├── [...]
+	│   └── timeline			- directorio donde se almacenan las imágenes utilizadas en el timeline.
+	│       └── [...]
+	...
+	
+Simplemente substituyendo la imagen por la nuestra con el mismo nombre no sería necesario realizar más modificaciones.
+
+## How-TOs útiles
+
+![alt text](https://illustrated-git.readthedocs.io/en/latest/_images/git-flows.svg)
+
+![alt text](https://raw.githubusercontent.com/therbootcamp/therbootcamp.github.io/master/_sessions/_image/markdown_cheat.png)
 	
