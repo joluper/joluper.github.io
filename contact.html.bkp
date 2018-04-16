@@ -1,0 +1,27 @@
+---
+layout: null
+section-type: contact
+title: Contact
+email: perezjoseluis97@gmail.com
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  
+  - title: pinterest
+    url: https://www.pinterest.es/perezjoseluis97
+  - title: twitter
+    url: https://twitter.com/jooseluisperez
+  - title: github
+    url: http://github.com/joluper
+  - title: gitlab
+    uri: http://gitlab.com/jooseluisperez
+  - title: instagram
+    uri: https://www.instagram.com/joirephoto
+---
+## Contact
+
+<<<<<<< HEAD
+Send me an email if you would like to get in touch, hire me for your next project, have questions, feedback on my side projects or just want to say hello.
+=======
+Send me an email if you would like to get in touch, hire me for your next project, have questions or feedback on my projects, or just want to say hello.
+>>>>>>> 9ff3ffa12b4b77760fc37e41bc7619b60c583884
