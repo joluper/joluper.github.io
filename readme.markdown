@@ -75,9 +75,38 @@ Los pasos han sido los siguientes:
 	
 ### Creación de un nuevo site con Jekyll
 
-Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll, para ello ejecutaremos el siguiente comando:
+Ahora crearemos la estructura de directorios de nuestro nuevo site con jekyll utilizando la plantilla "Timeline",
+para ello ejecutaremos el siguiente comando:
+
+	git clone https://github.com/kirbyt/timeline-jekyll-theme.git
+	
+Alternativamente, podemos ejecutar el siguiente comando para aprender cual es la estructura básica de jekyll:
 
 	jekyll new newsite
+	
+### Importación de la configuración por defecto
+
+Cuando hacermos el git clone, el fichero "_config.yml" que trae no viene precargado con la configuración por defecto, para ello debemos copiar el contenido del siguiente en nuestro y configurarlo a nuestro gusto:
+
+	https://github.com/kirbyt/timeline-jekyll-theme/blob/master/_config.yml
+	
+El nuestro nos ha quedado tal que así:
+
+	url: http://joluper.github.io
+	baseurl: /
+
+	# Site Settings
+	title: José Luis Pérez Sánchez
+	description: "Este es mi portfolio, aquí podrás encontrar información profesional sobre mi."
+	keywords: "joluper, jekyll, portfolio"
+	google-tracking-id:
+
+	# Career Settings
+	# Default career thumbnail image.
+	career-img: "img/timeline/default.jpg"
+
+	exclude: ["Rakefile", "LICENSE", "readme.markdown"]
+
 	
 ### Aportación de información
 
